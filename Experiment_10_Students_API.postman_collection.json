@@ -1,0 +1,125 @@
+{
+	"info": {
+		"name": "Experiment 10 - Students CRUD API",
+		"description": "Postman Collection for Node.js + Express.js Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Create Record",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Rahul\",\n  \"email\": \"rahul@gmail.com\",\n  \"course\": \"BCA\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"students"
+					]
+				}
+			}
+		},
+		{
+			"name": "2. Get All Records",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"students"
+					]
+				}
+			}
+		},
+		{
+			"name": "3. Get Single Record",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/students/<REPLACE_WITH_ID>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"students",
+						"<REPLACE_WITH_ID>"
+					]
+				}
+			}
+		},
+		{
+			"name": "4. Update Record",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Rahul Updated\",\n  \"email\": \"rahul_upd@gmail.com\",\n  \"course\": \"MCA\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/students/<REPLACE_WITH_ID>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"students",
+						"<REPLACE_WITH_ID>"
+					]
+				}
+			}
+		},
+		{
+			"name": "5. Delete Record",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/students/<REPLACE_WITH_ID>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"students",
+						"<REPLACE_WITH_ID>"
+					]
+				}
+			}
+		}
+	]
+}
